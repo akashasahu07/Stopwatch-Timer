@@ -5,7 +5,9 @@
 }
 
 body {
-    background: linear-gradient(25deg, #f181aa, #d36c76 50%);
+    /* background: linear-gradient(25deg, #f181aa, #d36c76 50%); */
+    background-image: url(images/background.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,10 +16,10 @@ body {
 }
 
 .container {
-    background-color: #eee9e9;
+    background-color: #4f4f4f;
     border-radius: 16px;
     padding: 30px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 12px #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +33,7 @@ body {
 .title {
     font-size: 30px;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 .stopwatch {
@@ -45,7 +48,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px cyan;
     animation: pulse 1.5s infinite alternate;
 }
 
@@ -78,15 +81,17 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 0 10px #6e0074;
     transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #d72a76;
+    background-color: #89023c;
 }
 
 .lap-title {
     font-size: 1.5rem;
+    color: #fff;
 }
 
 .laps {
@@ -98,14 +103,14 @@ ul {
     max-height: 200px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 12px #7a3c02;
     margin-top: 10px;
 
 }
 
 li {
     padding: 1rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #5e5e5e;
 }
 
 li:last-child {
@@ -119,17 +124,17 @@ li span {
 /* Optional: Further tweak for very small devices */
 @media (max-width: 500px) {
     .title {
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
     }
 
     .timer {
         font-size: 20px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .timer span {
-        width: 50px;
+        width: 70px;
     }
 
     button {

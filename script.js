@@ -31,7 +31,6 @@ function startTimer() {
 function stopTimer() {
     clearInterval(interval);
     addToLapList();
-    resetTimerData();
     startButton.disabled = false;
 }
 
@@ -72,9 +71,9 @@ function padTime(time) {
 }
 
 function resetTimerData() {
-    // minutes = 0;
-    // seconds = 0;
-    // milliseconds = 0;
+    minutes = 0;
+    seconds = 0;
+    milliseconds = 0;
     displayTimer();
 }
 
